@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <head>  
+        <title>FreeDash</title>
+    </head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="loader.css" />
+    <body>
+        <input id="fakeInput" type="text" value=""/>
+        <div class="header">
+            <button class="burgger" id="burgger">|||</button>
+            <div class="option" id="option">
+                <button class="burgger h" id="keyboard" isActive="false">$</button>
+                <button class="burgger h" id="activateSlider" isActive="false" style="visibility : hidden;">#</button>
+                <button class="burgger h" id="activateTouchPad" isActive="false"></button>
+                <button class="burgger h" id="activateControllePad" isActive="false"></button>
+
+                    <button class="burgger h" id="laser" isActive="false"></button>
+                    <div class="laserOption" id="laserOption" isActive="false">
+                        <button class="burgger" id="freeLaser">free</button>
+                        <button class="burgger" id="touchLaser">touch</button>
+                    </div>
+
+            </div>
+        </div>
+        <div class="sideBar" id="sideBar" isOpen="false">
+            <div class="sideBarHeader">
+            </div>
+            <div class="sideBarBody">
+                <button class="sideBarButton" id="dropboxChooser">dropbox</button>
+                <button class="sideBarButton" onclick="loadPicker()" id="drivePicker">google drive</button>
+                <button class="sideBarButton" id="upload-button">Upload</button>
+                <input id="upload-input" type="file" name="uploads[]" multiple="multiple">
+            </div>
+        </div>
+        <div class="sideBarFade" id="sideBarFade"></div>
+        <button class="controllerSlider" id="slider" >|</button>
+        <div class="laserPad" id="laserPad"></div>
+        <div class="touchPad" id="touchPad"></div>
+        <div class="laserImage" id="laserImage">
+            <img src="images/lazer.png" width="25px" height="25px"></img>
+        </div>
+        
+        <div class="bodyPusher"></div>
+        <div class="body"> 
+            <table class="filesTable" id="filesTable">
+            </table>
+        </div>
+        
+        <div class="controllePad" id="controllePad">
+                <div class="swipePad" id="swipePad"></div>
+                <button class="controllerButton" id="Up" key="Prior">Up</button>
+                <button class="controllerButton" id="previous" key="Next">down</button>
+                <br>
+                <button class="controllerButton" id="start" key="Home">Prior</button>
+                <button class="controllerButton" id="end" key="End">End</button>
+                <br>
+                <button class="controllerButton" id="F11" key="F11 F5" isActive="false">Full Screen</button>
+                <button class="controllerButton" id="recherche" key="Control_L+Alt_L+Down">switch</button>
+                <button class="controllerButton" id="close" key="Alt_L+F4">Close</button>
+        </div>
+        <div class="footer">
+        </div>
+        <div class="fade" id="fade"></div>
+        
+        <div class="sk-folding-cube">
+         <div class="sk-cube1 sk-cube"></div>
+         <div class="sk-cube2 sk-cube"></div>
+         <div class="sk-cube4 sk-cube"></div>
+         <div class="sk-cube3 sk-cube"></div>
+         <h3 id="progress">...%</h3>
+        </div>
+    </body>
+    <script src="jquery-2.1.4.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="controller.js"></script>
+    <!-- DropBox api -->
+    <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="tg9vxahd34cqnzd"></script>
+    <script src="dropbox.js"></script>
+    <!-- The Google API Loader script. -->
+    <script type="text/javascript" src="https://apis.google.com/js/api.js?onload=loadPicker"></script>
+    <script type="text/javascript" src="https://apis.google.com/js/client.js"></script>
+    <script src="drive.js"></script>
+</html>

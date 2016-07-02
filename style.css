@@ -1,0 +1,380 @@
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    max-height: 70px;
+    min-height: 40px;
+    background: #48a770;
+    
+    box-shadow: 0px 1px 2px 0px #000; 
+    -moz-box-shadow : 0px 1px 2px 0px #000; 
+    -webkit-box-shadow: 0px 1px 2px 0px #000; 
+}
+
+
+.burgger{
+    height: 94%;
+    min-width: 40px;
+    max-width: 50px;
+    margin: 1px;
+    border: none;
+    border-radius: 6px;
+    background: #48a77a;
+    
+    box-shadow: 0px 0.5px 0.5px 0px #000;
+    -moz-box-shadow : 0px 0.5px 0.5px 0px #000;
+    -webkit-box-shadow: 0px 0.5px 0.5px 0px #000;
+}
+
+.option{
+    z-index: 1;
+    position: absolute;
+    top : 0;
+    display: inline-flex;
+    height: 100%;
+    right: 2px;
+}
+
+.classLaser{
+    top: 0;
+    display: flex;    
+}
+
+.laserOption{
+    position: absolute;
+    display: inline-flex;
+    height: 100%;
+    right: 1px;
+    top : 40px;
+    margin-top: 3px;
+    padding: 3px;
+    border-radius: 4px;
+    visibility: hidden;
+    background: rgba(7, 7, 7, 0.9);
+    
+    box-shadow: 0px 0.5px 0.5px 0px #000;
+    -moz-box-shadow : 0px 0.5px 0.5px 0px #000;
+    -webkit-box-shadow: 0px 0.5px 0.5px 0px #000;
+    
+}
+
+.sideBarFade{
+    z-index: 15;
+    position: absolute;
+    top : 40px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    background: rgba(0, 0, 0, 0.8);
+    
+    overflow-y: hidden;
+    
+     -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    -moz-transition : all 0.8s;
+}
+
+.sideBar{
+    z-index: 16;
+    position: fixed;
+    top: 0;
+    left: 0%;
+    width: 70%;
+    height: 100%;
+    max-width: 350px;
+    min-width: 100px;
+    background: #48a770;
+    
+    overflow-y: hidden;
+    
+    
+    box-shadow: 1px 0px 2px 0px #000; 
+    -moz-box-shadow : 1px 0px 2px 0px #000; 
+    -webkit-box-shadow: 1px 0px 2px 0px #000; 
+    
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+    -moz-transition : all 0.6s;
+}
+
+.sideBarHeader{
+    width: 95%;
+    height: 17%;
+    max-height: 100px;
+    min-height: 75px;
+    
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    
+    box-shadow: 0px 1px 1px 0px #000; 
+    -moz-box-shadow : 0px 1px 1px 0px #000; 
+    -webkit-box-shadow: 0px 1px 1px 0px #000;
+    
+}
+
+.sideBarBody{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.sideBarButton{
+    display: block;
+    width: 90%;
+    height: 40px;
+    margin: auto;
+    margin-top: 8px;
+    
+    border: none;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.2);
+    
+    box-shadow: 1px 1px 1px 2px #48a989; 
+    
+}
+
+.modeButton{
+    
+    display: block;
+    width: 70%;
+    height: 40px;
+    margin: auto;
+    margin-top: 8px;
+    
+    border: none;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.2);
+    
+    box-shadow: 1px 1px 1px 2px #48a989; 
+    
+}
+
+.bodyPusher{
+    display: block;
+    width: 100%;
+    height: 7%;
+    max-height: 70px;
+    min-height: 40px;
+    background: #48a989;
+}
+
+.body{
+    display: block;
+    width: 98%;
+    height: 90%;
+    margin: auto;
+    margin-top: 5px;
+    overflow-x:auto;
+    
+      
+     box-shadow: 0.2px 0.5px 0.5px 0.2px #000;
+    -moz-box-shadow : 0.2px 0.5px 0.5px 0.2px #000;
+    -webkit-box-shadow: 0.2px 0.5px 0.5px 0.2px #000;
+}
+
+.filesTable{
+    width: 98%;
+    margin: auto;
+    margin-top: 15px;
+    padding-top: 5px;
+}
+
+.showFileButton , .deleteFileButton{
+    width: 30px;
+    height:30px;
+    border: none;
+    border-radius: 3px;
+    background: #a2a2a2;
+    
+    box-shadow: 0px 0.5px 0.5px 0px #000;
+    -moz-box-shadow : 0px 0.5px 0.5px 0px #000;
+    -webkit-box-shadow: 0px 0.5px 0.5px 0px #000;
+}
+
+tr, td {
+    text-align: center;
+    padding: 1px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+.controllePad{
+    z-index: 12;
+    position: absolute;
+    top : 0;
+    left: -150%;
+    width: 94%;
+    height: 88%;
+    margin-left: 1%;
+    margin-top: 1%;
+    padding: 2%;
+    
+    background-color:#2C9057;
+    
+    border-radius: 5px;
+    
+    box-shadow: 0.2px 0.5px 0.5px 0.2px #000;
+    -moz-box-shadow : 0.2px 0.5px 0.5px 0.2px #000;
+    -webkit-box-shadow: 0.2px 0.5px 0.5px 0.2px #000;
+    
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -moz-transition : all 0.5s;
+}
+
+.controllerButton{
+
+    max-width: 100px;
+    min-width: 50px;
+    height: 40px;
+    margin: 6px;
+
+    border: none;
+    border-radius: 6px;
+    background: #48a77a;
+    
+    box-shadow: 0.2px 0.5px 0.5px 0.2px #000;
+    -moz-box-shadow : 0.2px 0.5px 0.5px 0.2px #000;
+    -webkit-box-shadow: 0.2px 0.5px 0.5px 0.2px #000;
+}
+.controllerSlider{
+    z-index: 15;
+    position: absolute;
+    right: 10px;
+    top : 45%;
+    width: 8%;
+    max-width: 30px;
+    min-width: 25px;
+    height: 60px;
+    visibility: hidden;
+    
+    border: none;
+    border-radius: 6px;
+    background: #48a77a;
+    
+    box-shadow: 0px 0.5px 0.5px 0px #000;
+    -moz-box-shadow : 0px 0.5px 0.5px 0px #000;
+    -webkit-box-shadow: 0px 0.5px 0.5px 0px #000;
+}
+
+#swipePad{
+    width: 96%;
+    height: 55%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    
+     box-shadow: 0px 0.5px 0.5px 0px #000;
+    -moz-box-shadow : 0px 0.5px 0.5px 0px #000;
+    -webkit-box-shadow: 0px 0.5px 0.5px 0px #000;
+}
+
+#touchPad{
+    z-index: 14;
+    position: absolute;
+    top : 40px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    background: rgba(0, 0, 0, 0);
+    
+    overflow-y: hidden;
+    
+    box-shadow: 0px 0.5px 0.5px 0px #000;
+    -moz-box-shadow : 0px 0.5px 0.5px 0px #000;
+    -webkit-box-shadow: 0px 0.5px 0.5px 0px #000;
+    
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    -moz-transition : all 0.8s;
+}
+
+#laserPad{
+    z-index: 14;
+    position: absolute;
+    top : 40px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    background: rgba(0, 0, 0, 0);
+    
+    overflow-y: hidden;
+    
+    box-shadow: 0px 0.5px 0.5px 0px #000;
+    -moz-box-shadow : 0px 0.5px 0.5px 0px #000;
+    -webkit-box-shadow: 0px 0.5px 0.5px 0px #000;
+    
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+    -moz-transition : all 0.6s;
+}
+.laserImage{
+    position: absolute;
+    z-index: 15;
+    visibility: hidden;
+}
+.footer{
+    display: hidden;
+}
+
+
+
+body{
+    margin: 0px;
+    overflow-y: hidden;
+}
+
+.fade{
+    z-index: 10;
+    position: absolute;
+    top : 40px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    background: rgba(0, 0, 0, 0);
+    
+    overflow-y: hidden;
+    
+     -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    -moz-transition : all 0.8s;
+}
+
+#activateControllePad{
+    background: url(images/manette.png);
+    background-size: 100% 95%;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+#laser{
+    background: url(images/laser.png);
+    background-size: 100% 100%;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+#activateTouchPad{
+    background: url(images/touchPad.png);
+    background-size: 90% 93%;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+#activateSlider{
+    background: url(images/slider.png);
+    background-size: 30% 93%;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+#upload-input {
+  display: none;
+}
